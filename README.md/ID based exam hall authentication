@@ -1,0 +1,73 @@
+# ID-Based Exam Hall Authentication System
+
+## Description
+The ID-Based Exam Hall Authentication System provides a secure and efficient way to verify student identities during exams. Using RFID ID cards and an Arduino Uno, it prevents impersonation, unauthorized entry, and manual errors, ensuring fast, accurate, and reliable authentication.
+
+---
+
+## Authors
+- **Sanjida Noshin Omi** – [Email](mailto:sanjida.noshin.omi@g.bracu.ac.bd)  
+- **Ahmed Mustayeen** – [Email](mailto:ahmed.mustayeen@g.bracu.ac.bd)  
+- **Using Phru** – [Email](mailto:using.phru@g.bracu.ac.bd)  
+- **Moriyam Akter Riana** – [Email](mailto:moriyam.akter.riana@g.bracu.ac.bd)  
+
+*All from the Department of Computer Science and Engineering, BRAC University, Dhaka, Bangladesh.*
+
+---
+
+## Features
+- RFID-based student authentication
+- Arduino-controlled servo motor and LED feedback
+- Enrollment and verification phases
+- Admin functions for updating or deleting student records
+- Fast, secure, and auditable access control
+
+---
+
+## How It Works
+1. **Enrollment Phase:** Students’ RFID cards are registered in the system.
+2. **Authentication Phase:** Students scan their cards; the Arduino checks the database.
+   - **Success:** Door unlocks, LED flashes once
+   - **Failure:** Access denied, LED flashes twice
+3. Admins can manage records using a special admin ID card.
+
+---
+
+## Hardware & Software
+- **Hardware:** Arduino Uno, RFID reader, servo motor, LCD (16×2 I2C), LED, push buttons
+- **Software:** Arduino IDE, `MFRC522`, `Servo`, `LiquidCrystal_I2C` libraries
+
+---
+## Circuit Diagram (Circuit Diagram Image)
+![Circuit Diagram](img/Circuit Diagram.png)  
+
+## Circuit Setup (Circuit Setup Image)
+![Circuit Setup](img/Circuit Setup.jpg)  
+---
+
+## Benefits
+- Reduces impersonation and cheating
+- Minimizes manual errors
+- Enhances exam hall security and efficiency
+- Scalable for multiple halls with future database integration
+
+---
+
+## Future Improvements
+- Biometric verification (fingerprint/face recognition)
+- Centralized database for large-scale deployment
+- IoT-based monitoring and real-time alerts
+- Cloud storage for attendance and logs
+
+---
+
+## License
+This project currently has **No license**. All rights reserved by the author. Contact the repository owner for reuse permissions.
+
+---
+
+## References
+1. C. J. S. Ortiz et al., “Implementing RFID Controlled Servo Motor Using Arduino,” 2024.  
+2. B. Bukhari et al., “Performance Analysis of RFID-Based Smart Door Lock Controlled by Arduino,” 2024.  
+3. “Secure RFID Door Access System Using Arduino and LCD with Servo motor,” ProjectHub, 2025.  
+4. The Engineering Projects, “Introduction to Arduino Uno,” 2018.
